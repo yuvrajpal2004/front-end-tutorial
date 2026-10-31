@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cotener{
+    display: flex;
+    border: 2px solid black;
+   height: 100vh;
+    margin: 3px;
+    padding: 3px;
+  width:100vw;
+    justify-content: center;
+   
+   
+    
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 2px;
+}
+#box1{
+    background-color: red;
+ flex-grow: 2;
+order: 4;
+}
+#box2{
+    background-color:yellow;
+    order: 5;
+}
+#box3{
+    background-color:blue;
+    order: 1;
+}
+#box4{
+    background-color:lightcoral;
+order: 6;
+}
+#box5{
+    background-color: rgb(250, 130, 130);
+    order: 2;
+}
+#box6{
+    background-color: greenyellow;
+    order: 3;
+}

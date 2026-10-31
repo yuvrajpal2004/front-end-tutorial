@@ -1,0 +1,21 @@
+.denger{
+    background-color: red;
+    height: 50px;
+    width: 100px;
+}
+.denger:hover{
+    cursor: pointer;
+    border: 5px solid green;
+    font-size: 25px;
+}
+.smuth{
+     background-color: rgb(10, 207, 86);
+    height: 50px;
+    width: 100px;
+}
+.smuth:hover{
+    cursor: pointer;
+    border: 5px solid rgb(238, 9, 40);
+    font-size: 25px;
+}
+

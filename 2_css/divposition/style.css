@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    display: inline-block ;
+}
+#box1{
+    position: relative;
+    bottom:20px;
+}
+#box2{
+    position: fixed;
+    top: 20px;
+    bottom: 30px;
+    left: 49px;
+}

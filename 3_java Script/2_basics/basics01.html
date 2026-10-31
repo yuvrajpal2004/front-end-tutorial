@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        console.log("hii")
+        function chengeme(){
+            document.getElementById('heading').innerHTML='kya fyda huaa chenge kerke';
+        }
+      function  clickme(){
+            console.log("hi my name is Ambuj pal and today i want to share my today learning things !!!");
+        };
+         function color(){
+            document.getElementById('heading').style.color='red';
+        }
+        function zoom(){
+            document.querySelector("#para").style.font='100px';
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="heading">this is the first class of javaScript</h1>
+    <p id="para">In my first javasscript class i read many thing if
+        you want to know whwt i read and learn today the click the button
+        and see is console
+    </p>
+    <button onclick="clickme()">click me</button>
+    <button onclick="chengeme()">chenge me</button>
+      <button onclick="color()">color</button>
+      <button onclick="zoom()">zoom</button>
+</body>
+
+</html>

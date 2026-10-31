@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Father's Day</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F4F1E1; /* Light beige background */
+            color: #4F4C47; /* Dark Liver text color */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #CAAC3E; /* Old Gold */
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #4F4C47;
+            line-height: 1.6;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        br {
+            margin-bottom: 10px;
+        }
+
+        /* Button Styles */
+        button {
+            background-color: #CAAC3E;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #A88F2A;
+        }
+
+        /* Hidden Message */
+        #hiddenMessage {
+            display: none;
+            font-size: 1.5em;
+            color: #CAAC3E;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Father's Day</h1>
+    <p>To the best dad in the world<br>Thank you for your love, support, and wisdom.<br>You are my hero!</p>
+    <button id="surpriseButton">Click for a Surprise</button>
+    <p id="hiddenMessage">You're the best, Dad! Enjoy your day!</p>
+
+    <script>
+        // JavaScript to handle the button click event
+        document.getElementById('surpriseButton').addEventListener('click', function() {
+            var message = document.getElementById('hiddenMessage');
+            message.style.display = 'block';
+            this.style.display = 'none'; // Hide the button after click
+        });
+    </script>
+</body>
+</html>

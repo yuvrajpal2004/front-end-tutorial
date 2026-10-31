@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.calculator {
+    background: linear-gradient(145deg, #2d3561, #1e2749);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 20px 20px 60px #1a1f3a, -20px -20px 60px #323b68;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.display {
+    grid-column: 1 / -1;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+    box-shadow: inset 5px 5px 10px #1a1f3a, inset -5px -5px 10px #323b68;
+}
+
+.previous-operand {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    min-height: 25px;
+    margin-bottom: 5px;
+}
+
+.current-operand {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.btn {
+    background: linear-gradient(145deg, #2d3561, #1e2749);
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 5px 5px 10px #1a1f3a, -5px -5px 10px #323b68;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 7px 7px 15px #1a1f3a, -7px -7px 15px #323b68;
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: inset 3px 3px 7px #1a1f3a, inset -3px -3px 7px #323b68;
+}
+
+.btn.number, .btn.decimal {
+    background: linear-gradient(145deg, #3a4268, #2a3258);
+}
+
+.btn.operation {
+    background: linear-gradient(145deg, #5a3a8c, #4a2a7c);
+}
+
+.btn.equals {
+    background: linear-gradient(145deg, #3c6e71, #2c5e61);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+@media (max-width: 500px) {
+    .calculator {
+        padding: 15px;
+        grid-gap: 10px;
+    }
+    
+    .btn {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+    
+    .current-operand {
+        font-size: 2rem;
+    }
+}
+  

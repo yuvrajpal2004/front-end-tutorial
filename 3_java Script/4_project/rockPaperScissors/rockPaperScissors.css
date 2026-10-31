@@ -1,0 +1,26 @@
+.heading {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    button {
+      font-size: 30px;
+      margin: 3px;
+      background-color: #64e379;
+      border-radius: 10px;
+      border: 5px solid black;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #7ab916;
+      transform: translateY(-2px);
+      box-shadow: 7px 7px 15px #1a1f3a, -7px -7px 15px #323b68;
+    }
+
+    button:active {
+      background-color: red;
+    }

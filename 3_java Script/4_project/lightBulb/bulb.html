@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LightBulb</title>
+    <style>
+      .heading{
+        height: 10px;
+        width: 10px;
+        border:2px solid black;
+        margin: 20px;
+        padding: 40px ;
+        border-radius: 50%;
+      }
+    </style>
+</head>
+<body>
+   <div class="heading"></div>
+     <button onclick="myFunction()">on</button>
+       <button onclick="myFunction1()">off</button>
+    <script>
+      let y=  document.querySelector(".heading");
+      function myFunction(){
+        y.style.backgroundColor="yellow"
+      }
+      function myFunction1(){
+        y.style.backgroundColor="white"
+      }
+    </script>
+</body>
+</html>

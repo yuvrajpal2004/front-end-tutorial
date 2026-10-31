@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product={
+            company:'dell',
+            price:20000,
+            color:'black',
+        }
+
+        //accessing the object properties
+        console.log(product);
+        console.log(product.company);
+
+        //uodating the object properties
+        product.price=400000;
+        console.log(product);
+
+        //adding new property to the object
+        product.model='dell inspiron 15';
+        console.log(product);
+        console.log(product.model);
+
+        //deleting the property from the object
+        delete product.color;
+        console.log(product);
+        console.log(product.color); //undefined
+        
+        //object with function
+        let person={
+            name:'ambuj kumar',
+            age:21,
+            getbirthyear:function(){
+                return 2025-this.age; }
+        }
+        console.log(person);
+        console.log(person.getbirthyear());
+        console.log(person.name);
+        console.log(person.age);
+        console.log(person['name']);
+        console.log(person['age']);
+
+        let selection={
+            rock:{'rock':'match tie','paper':'computer has win !!','scissors':'You win !'},
+            paper:{'rock':'You win !','paper':'match tie','scissors':'computer has win !!'},
+            scissors:{'rock':'computer has win !!','paper':'You win !','scissors':'match tie'}
+        }
+        console.log(selection);
+        function getresult(userMove, com_choose) {
+            return selection[userMove][com_choose];
+        }
+        console.log(getresult('rock','paper'));
+        console.log(getresult('rock','scissors'));
+        console.log(getresult('rock','rock'));
+        console.log(getresult('paper','rock'));
+        console.log(getresult('paper','scissors'));
+        console.log(getresult('paper','paper'));
+        console.log(getresult('scissors','rock'));
+        console.log(getresult('scissors','paper'));
+        console.log(getresult('scissors','scissors'));
+        
+        //autoboxing the object
+        console.log('hi my name is Ambuj kumar pal'.length);
+         console.log('hi my name is Ambuj kumar pal'.replace( 'Ambuj','prakash'));
+          console.log('hi my name is Ambuj kumar pal'.toUpperCase("prakash"));
+           
+            
+
+
+
+    </script>
+</body>
+</html>

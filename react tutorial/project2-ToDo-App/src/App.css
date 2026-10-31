@@ -1,0 +1,12 @@
+.btn{
+    min-width: 80px;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 55px;
+}
+.row{
+    margin-bottom: 10px;
+    text-align: center;
+}

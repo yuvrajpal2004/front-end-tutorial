@@ -1,0 +1,14 @@
+.box{
+  height: 350px;
+  width: 250px;
+  color: blue;
+  background-color: lightseagreen;
+  display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product from myntra</title>
+</head>
+
+<body>
+    <script>
+        let product = {
+            name: 'puma shoes',
+            price: 4000,
+            color: 'black',
+            size: 6,
+            availability: true,
+
+        };
+        console.log(product);
+
+       //prectise 2
+        let product2 = {
+            name: 'adidas shoes',
+            price: 5000,
+            color: 'blue',
+            size: 8,
+            availability: true,
+        }
+        // console.log(product2);
+        // console.log(product === product2);
+
+        // let product3 = {product}
+        // console.log(product === product3);
+
+        //prectise 3
+         let object={message:'good job',
+                    status:'complete',
+         };
+
+        //  let massage=object.message;
+        //     let status=object.status;
+        //     console.log(massage);
+        //     console.log(status);
+
+            // let{message, status}=object;
+            // console.log(message);
+            // console.log(status);
+
+
+            //prectise 4
+
+          let product4 = {
+            name: 'adidas shoes',
+            price: 5000,
+            color: 'blue',
+            size: 8,
+            availability: true,
+        }
+         let product5 = {
+            name: 'adidas shoes',
+            price: 5000,
+            color: 'blue',
+            size: 8,
+            availability: true,
+        }
+
+      
+        function isidentical(product1,product2){
+            if(typeof  product1 !=='object' || typeof product2 !=='object'){
+                // console.warn('invailide input');
+               return false;
+            }
+             if(product4 == product5){
+                return true;
+             }
+             if(
+                product4.name === product5.name  &&
+                product4.price === product5.price &&
+                product4.color === product5.color &&
+                product4.size === product5.size 
+             ){
+                return true;
+             }else{
+                return false;
+             }
+        }
+        console.log(isidentical(product4,product5));
+        console.log(isidentical(product4,product4));
+        console.log(isidentical(product4,'hello'));
+        console.log(isidentical(product4,5));
+        
+
+
+        </script>
+</body>
+
+</html>

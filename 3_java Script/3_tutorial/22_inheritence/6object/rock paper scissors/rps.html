@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors with Computer</h1>
+
+        <button class="buttons" onclick="
+           let com_choose= generateCoputerChoice()
+           let result= getresult('rock', com_choose)
+           showresult('rock',com_choose,result)
+        ">rock</button>
+
+        <!-- for paper button -->
+        <button class="buttons" onclick="
+            com_choose= generateCoputerChoice();
+            result= getresult('paper', com_choose)
+            showresult('paper',com_choose,result)
+        ">Paper</button>
+
+        <!-- for scissors button -->
+        <button class="buttons" onclick="   
+              com_choose=   generateCoputerChoice()  
+              result= getresult('scissors', com_choose)
+              showresult('Scissors',com_choose,result)
+        ">Scissors</button>
+    </div>
+
+    <script>
+
+        let score={
+            win:0,
+            tie:0,
+            lose:0,
+            getScore:  function() 
+               { return`no of matches win: ${score.win} tie: ${score.tie} lose: ${score.lose}`}
+            
+        };
+
+        function generateCoputerChoice() {
+            let randomNum = Math.random() * 3;
+            if (randomNum > 0 && randomNum <= 1) {
+                return 'rock';
+            } else if (randomNum > 1 && randomNum <= 2) {
+                return 'paper';
+            } else {
+                return 'scissors';
+            }
+        }
+
+        function getresult(userMove, com_choose) {
+            if (userMove === 'rock') {
+                if (com_choose === 'rock') {
+                    score.tie ++;
+                    return 'match tie';
+                }
+                else if (com_choose === 'paper') {
+                    score.lose ++;
+                    return 'computer has win !!';
+                }
+                else {
+                    score.win ++;
+                    return 'You win !';
+                }
+            }
+            else if (userMove === 'paper') {
+                if (com_choose === 'rock') {
+                     score.win ++;
+                    return 'You win!';
+                }
+                else if (com_choose === 'paper') {
+                     score.tie ++;
+                    return 'match tie';
+                }
+                else {
+                     score.lose ++;
+                    return 'computer has win';
+                }
+            }
+            else {
+                if (com_choose === 'rock') {
+                     score.lose ++;
+                    return 'computer has win';
+                }
+                else if (com_choose === 'paper') {
+                     score.win ++;
+                    return 'You win';
+                }
+                else {
+                     score.tie ++;
+                    return 'match tie';
+                }
+            }
+        }
+        function showresult(userMove, com_choose, result) {
+            console.log(score);
+            alert(`use choose ${userMove} and computer choose ${com_choose} and
+            
+            
+            ${result}
+            
+            ${score.getScore()};
+            `);
+        }
+        
+    </script>
+</body>
+
+</html>

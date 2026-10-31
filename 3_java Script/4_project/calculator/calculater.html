@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="clculater.css">
+</head>
+
+<body>
+    <div id="calculater">
+        <h1>Calculator</h1>
+        <input type="text" id="display" readonly>
+        <div class="button_box">
+            <button onclick="displayResult +='7';  document.querySelector('#display').value=displayResult">7</button>
+            <button onclick="displayResult +='8' ;  document.querySelector('#display').value=displayResult">8</button>
+            <button onclick="displayResult +='9' ;  document.querySelector('#display').value=displayResult">9</button>
+            <button class="operater" onclick="displayResult +='/';  document.querySelector('#display').value=displayResult">/</button>
+            <button onclick="displayResult +='4' ;  document.querySelector('#display').value=displayResult">4</button>
+            <button onclick="displayResult +='5' ;  document.querySelector('#display').value=displayResult">5</button>
+            <button onclick="displayResult +='6';  document.querySelector('#display').value=displayResult">6</button>
+            <button class="operater" onclick="displayResult +='*' ;  document.querySelector('#display').value=displayResult">*</button>
+            <button onclick="displayResult +='1';  document.querySelector('#display').value=displayResult">1</button>
+            <button onclick="displayResult +='2';  document.querySelector('#display').value=displayResult">2</button>
+            <button onclick="displayResult +='3';  document.querySelector('#display').value=displayResult">3</button>
+            <button class="operater" onclick="displayResult +='+';  document.querySelector('#display').value=displayResult">+</button>
+            <button onclick="displayResult +='00';  document.querySelector('#display').value=displayResult">00</button>
+            <button onclick="displayResult +='0';  document.querySelector('#display').value=displayResult">0</button>
+            <button onclick="displayResult +='.';  document.querySelector('#display').value=displayResult">.</button>
+            <button class="operater" onclick="displayResult +='-' ;  document.querySelector('#display').value=displayResult">-</button>
+            <button class="final" onclick="displayResult =' ';  document.querySelector('#display').value=displayResult">AC</button>
+            <button  class="final"
+                onclick="displayResult =(eval(displayResult));  document.querySelector('#display').value=displayResult">=</button>
+        </div>
+    </div>
+    <script>
+        let displayResult = '';
+        document.querySelector('#display').value = displayResult
+    </script>
+</body>
+
+</html>
